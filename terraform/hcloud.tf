@@ -14,9 +14,13 @@ variable "instance_count"  {
   }
 }
 
+data "hcloud_location" "by_name" {
+  name 		= "fsn1"
+}
+
 resource "hcloud_ssh_key" "default" {
   name 		= "ctf-ssh-key"
-  public_key 	= file("~/.ssh/id_ed25519.pub")
+  public_key 	= file("~/.ssh/id_rsa.pub")
 }
 
 resource "hcloud_firewall" "ctf_firewall" {
@@ -37,7 +41,7 @@ resource "hcloud_firewall" "ctf_firewall" {
   }
 }
 
-resource "hcloud_server" "web" {
+resource "hcloud_server" "ctf" {
   count 	= var.instance_count
   name 		= "ctf-vm-${count.index}"
   server_type 	= "cx23"

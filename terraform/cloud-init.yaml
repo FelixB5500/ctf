@@ -4,12 +4,25 @@ package_update: true
 packages:
   - docker.io
   - docker-compose
-  - curl 
+  - git
+
+ssh_pwauth: true
+disable_root: false
+
+users:
+  - name: ctf
+    groups: docker
+    home: /home/ctf
+    shell: /bin/bash
+    sudo: []
+    lock_passwd: true
 
 runcmd:
   - systemctl enable docker
   - systemctl start docker
-  - usermod -aG docker ubuntu
-  - cd /home/ubuntu
-  - curl -o docker-compose.yml https://raw.githubusercontent.com/FelixB5500/ctf/refs/heads/main/docker-compose.yml
-  - docker compose up -d
+  - mkdir -p /home/ctf/
+  - cd /home/ctf
+  - git clone https://github.com/FelixB5500/ctf.git
+  - cd /home/ctf/ctf
+  - chown -R ctf:ctf /home/ctf
+  - su ctf -c "cd /home/ctf/ctf && docker compose up -d"
