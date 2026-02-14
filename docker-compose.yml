@@ -1,16 +1,16 @@
 services:
   evershop:
     image: felix5500/very-secure-webshop-ctf:latest
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
     restart: always
     environment:
       DB_HOST: database
       DB_PORT: 5432
-      DB_PASSWORD: postgres
-      DB_USER: postgres
-      DB_NAME: postgres
+      DB_PASSWORD: j1JMJQKfdmz8cauwzvZr75xbdC9Aq5PA1LQ5i3T1tG51hkB36wRERTptRyH7sObX
+      DB_USER: evershop
+      DB_NAME: evershop
     networks:
       backend:
         ipv4_address: 172.20.0.4
@@ -28,11 +28,11 @@ services:
       - ./postgres/db-init:/docker-entrypoint-initdb.d
     command: postgres -c hba_file=/var/lib/postgresql/pg_hba.conf
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-    ports:
-      - 5432:5432
+      POSTGRES_PASSWORD: j1JMJQKfdmz8cauwzvZr75xbdC9Aq5PA1LQ5i3T1tG51hkB36wRERTptRyH7sObX
+      POSTGRES_USER: evershop
+      POSTGRES_DB: evershop
+    expose:
+      - 5432
     networks:
       backend:
         ipv4_address: 172.20.0.3
@@ -42,7 +42,7 @@ services:
       backend:
         ipv4_address: 172.20.0.101
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_EMAIL: admin@very-secure-webshop.com
       PGADMIN_DEFAULT_PASSWORD: admin1234
       PGADMIN_CONFIG_SERVER_MODE: "False"
     volumes:
