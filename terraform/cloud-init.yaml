@@ -23,6 +23,5 @@ runcmd:
   - mkdir -p /home/ctf/
   - cd /home/ctf
   - git clone https://github.com/FelixB5500/ctf.git
-  - cd /home/ctf/ctf
   - chown -R ctf:ctf /home/ctf
-  - su ctf -c "cd /home/ctf/ctf && docker compose up -d"
+  - su ctf -c "cd /home/ctf/ctf && docker-compose up -d"

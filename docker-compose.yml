@@ -57,7 +57,6 @@ networks:
   backend:
     name: very-secure-webshop-backend
     driver: bridge
-    enable_ipv4: true
     ipam:
       config:
         - subnet: 172.20.0.0/16
