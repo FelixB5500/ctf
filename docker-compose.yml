@@ -1,9 +1,9 @@
 services:
   evershop:
     image: felix5500/very-secure-webshop-ctf:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
     restart: always
     environment:
       DB_HOST: database

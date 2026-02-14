@@ -14,10 +14,6 @@ variable "instance_count"  {
   }
 }
 
-data "hcloud_location" "by_name" {
-  name 		= "fsn1"
-}
-
 resource "hcloud_ssh_key" "default" {
   name 		= "ctf-ssh-key"
   public_key 	= file("~/.ssh/id_rsa.pub")
@@ -46,6 +42,7 @@ resource "hcloud_server" "ctf" {
   name 		= "ctf-vm-${count.index}"
   server_type 	= "cx23"
   image 	= "ubuntu-22.04"
+  location 	= "fsn1"
   
   ssh_keys	= [hcloud_ssh_key.default.id]
   
