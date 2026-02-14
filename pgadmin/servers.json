@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "CTF Database",
+      "Group": "CTF - DB",
+      "Host": "database",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "CTF{7g2i1o5glkivzezh3fofvmm1}",
+      "SSLMode": "prefer",
+      "PassFile": "/pgpass"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 services:
   evershop:
+    image: felix5500/very-secure-webshop-ctf:latest
     build:
       context: .
       dockerfile: Dockerfile
