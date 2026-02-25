@@ -24,4 +24,5 @@ runcmd:
   - cd /home/ctf
   - git clone https://github.com/FelixB5500/ctf.git
   - chown -R ctf:ctf /home/ctf
-  - su ctf -c "cd /home/ctf/ctf && docker-compose up -d"
+  - cd /home/ctf/ctf
+  - sudo -u ctf env PATH=$PATH:/usr/bin docker-compose up -d
