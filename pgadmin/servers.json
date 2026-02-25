@@ -6,7 +6,7 @@
       "Host": "database",
       "Port": 5432,
       "MaintenanceDB": "postgres",
-      "Username": "CTF{7g2i1o5glkivzezh3fofvmm1}",
+      "Username": "CTF{4g7i0o2glkivzezh2fofvmmh}",
       "SSLMode": "prefer",
       "PassFile": "/pgpass"
     }
