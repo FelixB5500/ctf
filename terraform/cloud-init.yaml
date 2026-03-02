@@ -2,27 +2,36 @@
 package_update: true
 
 packages:
-  - docker.io
-  - docker-compose
-  - git
+    - docker.io
+    - docker-compose
+    - git
 
 ssh_pwauth: true
 disable_root: false
 
 users:
-  - name: ctf
-    groups: docker
-    home: /home/ctf
-    shell: /bin/bash
-    sudo: []
-    lock_passwd: true
+    - name: ctf
+      groups: docker
+      home: /home/ctf
+      shell: /bin/bash
+      sudo: []
+      lock_passwd: true
 
 runcmd:
-  - systemctl enable docker
-  - systemctl start docker
-  - mkdir -p /home/ctf/
-  - cd /home/ctf
-  - git clone https://github.com/FelixB5500/ctf.git
-  - chown -R ctf:ctf /home/ctf
-  - cd /home/ctf/ctf
-  - sudo -u ctf env PATH=$PATH:/usr/bin docker-compose up -d
+    - systemctl enable docker
+    - systemctl start docker
+    - mkdir -p /home/ctf/
+    - cd /home/ctf
+    - git clone https://github.com/FelixB5500/ctf.git
+    - chown -R ctf:ctf /home/ctf
+    - cd /home/ctf/ctf
+    - |
+        IP=$(hostname -I | awk '{print $1}')
+        cat <<EOF > /etc/shop-config.json
+        {
+          "shop": {
+            "homeUrl": "http://$IP"
+          }
+        }
+        EOF
+    - sudo -u ctf env PATH=$PATH:/usr/bin docker-compose up -d
