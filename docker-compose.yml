@@ -11,12 +11,14 @@ services:
       DB_PASSWORD: j1JMJQKfdmz8cauwzvZr75xbdC9Aq5PA1LQ5i3T1tG51hkB36wRERTptRyH7sObX
       DB_USER: evershop
       DB_NAME: evershop
-      FLAG: CTF{c0ngr4ts}
+      FLAG: CTF{l0w_st0ck_3v4l_3sc4p3}
     networks:
       backend:
         ipv4_address: 172.20.0.4
     volumes:
       - ./media:/app/media
+      - ./dev:/app/dev
+      - ./config:/app/config
     depends_on:
       - database
     ports:
