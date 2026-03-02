@@ -28,7 +28,7 @@ runcmd:
     - cd /home/ctf/ctf
     - |
         IP=$(hostname -I | awk '{print $1}')
-        cat <<EOF > /home/ctf/ctf/config/shop-config.json
+        cat <<EOF > /home/ctf/ctf/config/default.json
         {
           "shop": {
             "homeUrl": "http://$IP"
