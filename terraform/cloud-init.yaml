@@ -23,11 +23,12 @@ runcmd:
     - mkdir -p /home/ctf/
     - cd /home/ctf
     - git clone https://github.com/FelixB5500/ctf.git
+    - mkdir -p /home/ctf/ctf/config
     - chown -R ctf:ctf /home/ctf
     - cd /home/ctf/ctf
     - |
         IP=$(hostname -I | awk '{print $1}')
-        cat <<EOF > /etc/shop-config.json
+        cat <<EOF > /home/ctf/ctf/config/shop-config.json
         {
           "shop": {
             "homeUrl": "http://$IP"
