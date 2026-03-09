@@ -2467,7 +2467,8 @@ INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (14, '34c47ad9-4ae
 INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (15, '3050a89a-a036-4a4d-8ce7-c0d01818e18e', 'simple', 5, true, 2, 'THERMO-005-YEL', 35.0000, 350.0000, NULL, true, '2026-02-25 09:18:26.004755+00', '2026-02-25 09:18:26.004755+00', 4, false);
 INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (17, 'bff0c71d-5a58-41e1-a423-a593346c7a9c', 'simple', NULL, true, 1, 'nk1234', 1.0000, 0.0100, 1, true, '2026-02-25 10:04:10.392963+00', '2026-02-25 10:04:10.392963+00', 1, false);
 INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (16, 'e51325da-182a-4fe1-b105-6b5541ca8a9e', 'simple', NULL, true, 1, 'jt47022', 47.2200, 47022.0000, 1, true, '2026-02-25 09:59:48.649854+00', '2026-02-25 09:59:48.649854+00', 1, false);
-
+INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (18, '7d5deeca-a04e-443b-a92b-3754433364ba', 'simple', NULL, true, 1, 'mmps', 24.0000, 22074.0000, 1, true, '2026-02-25 09:59:48.649854+00', '2026-02-25 09:59:48.649854+00', 1, false);
+INSERT INTO "public"."product" OVERRIDING SYSTEM VALUE VALUES (19, 'be0d6de2-c372-44d4-8c32-d0ef07b15c92', 'simple', NULL, true, 1, 'turbo-erik', 29.999, 70.0000, 1, true, '2026-02-25 09:59:48.649854+00', '2026-02-25 09:59:48.649854+00', 1, false);
 
 --
 -- Data for Name: product_attribute_value_index; Type: TABLE DATA; Schema: public; Owner: evershop
@@ -2490,8 +2491,8 @@ INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VAL
 INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VALUES (15, 15, 1, 3, 'Yellow');
 INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VALUES (19, 17, 2, 14, 'XS');
 INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VALUES (22, 16, 2, 16, 'M');
-
-
+INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VALUES (23, 18, 2, 16, 'XS');
+INSERT INTO "public"."product_attribute_value_index" OVERRIDING SYSTEM VALUE VALUES (24, 19, 2, 16, 'M');
 --
 -- Data for Name: product_collection; Type: TABLE DATA; Schema: public; Owner: evershop
 --
@@ -2546,7 +2547,13 @@ INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (14, 1
 INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (15, 15, 'Stainless Steel Thermos - Yellow', '[{"id":"r__thermo_yellow","columns":[{"size":1,"id":"c__thermo_yellow","data":{"time":1729900000000,"blocks":[{"id":"thermo_yellow_p1","type":"paragraph","data":{"text":"Keep your beverages at the perfect temperature with our Stainless Steel Thermos. Double-wall vacuum insulation keeps drinks hot for 12 hours or cold for 24 hours."}}],"version":"2.31.0"}}],"size":1,"className":"md:grid-cols-1"}]', NULL, 'stainless-steel-thermos-yellow', 'Stainless Steel Thermos - Yellow', 'Insulated stainless steel thermos keeps drinks hot or cold for hours', 'thermos, insulated bottle, water bottle, yellow, drinkware');
 INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (17, 17, 'Nazar Kocin', 'Nazar Kocin ist der beste Beweis dafür, dass wahre Größe nichts mit Zentimetern zu tun hat. Diese extrem kleine Figur steckt voller Emotionen – denn sie ist im wahrsten Sinne des Wortes klein, aber mächtig!', NULL, 'nazar-kocin', 'Nazar Kocin', '', '');
 INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (16, 16, 'Jorgine Trülline', '[{"id":"r__b62c92b7-18c6-4652-8916-ab572591a840","editSetting":true,"columns":[{"size":1,"className":"md:col-span-1","id":"c__5e15174e-1c23-4e74-9dc6-ca4060cacbe9","data":{"time":1772013488509,"blocks":[{"id":"paEBTkFEJZ","type":"paragraph","data":{"text":"Jorgine Trülline ist eine bezaubernde Sammelfigur mit ganz eigenem Charakter und liebevollen Details, die sie zu etwas ganz Besonderem macht. Mit ihrem verschmitzten Lächeln, den sorgfältig gestalteten Gesichtszügen und ihrem detailverliebten Outfit zieht sie sofort alle Blicke auf sich."}}],"version":"2.31.1"}}],"size":1,"className":"md:grid-cols-1"}]', NULL, 'jorgine-truelline-47022', 'Jorgine Trülline', '', '');
-
+INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (18, 18, 'Der Monotonie-Monarch: Paul', 'Gestatten, Paul. Paul ist kein gewöhnlicher Gnom; er ist dein neuer, unerschütterlicher Lerngefährte mit der Spezialisierung auf Probeklausuren. Seine markante, stachlige Erscheinung ist ein subtiles, visuelles Symbol für die reine, destillierte Monotonie, die er mit Hingabe verkörpert.
+Wie Paul dir hilft? Mit seiner unnachahmlichen Stimme – einem sanften, hypnotischen Monoton –, die dich in einen Zustand tiefer, fast wüstenartiger Ruhe versetzt. Manche sagen, er klinge wie ein Kaktus, der schläft. Paul liebt es, in seinem Schaukelstuhl im Gras zu sitzen, an seiner "Studien-Limo" zu nippen und sich vorzustellen, wie er dir Probeklausuren aushändigt. Er ist ein Meister der Geduld, der stundenlang schaukelnd auf dich wartet.
+Subtile Unterstützung? Ja, Paul fragt vielleicht mit seiner monotonen Stimme, ob du wirklich verstanden hast, was du liest. Im Gegensatz zu anderen, aufdringlichen Lernhilfen, ist Paul einfach da. Und das ist sein Wert: Paul ist ein greifbares Symbol für die Notwendigkeit, langweilige Aufgaben durchzustehen. Seine Anwesenheit ist eine Erinnerung daran, dass du nicht allein in deiner Frustration bist.
+Zustand: Völlig passiv, aber visuell unvergesslich.
+Wert: Ein unbezahlbares Symbol für Frustrationstoleranz und die Akzeptanz von Monotonie.
+Kategorie: Kinder (als pädagogisches Hilfsmittel zur emotionalen Abhärtung).', NULL, 'der-monotonie-monarch', 'Der Monotonie-Monarch: Paul', '', '');
+INSERT INTO "public"."product_description" OVERRIDING SYSTEM VALUE VALUES (19, 19, 'Turbo-Erik', '[{"id":"r__d85f1db5-4ca9-4c92-8a96-62b9e6f7e9ed","editSetting":true,"columns":[{"size":1,"className":"md:col-span-1","id":"c__7882454a-c4ad-4c01-8348-18279b02aed7","data":{"time":1772013488509,"blocks":[{"id":"shdfz2h78tnri","type":"paragraph","data":{"text":"Wir stellen vor: Erik, Ihr neuer, völlig bekehrter E-Mobilitäts-Champion! Er liebt es jetzt so sehr, dass wir ihn Ihrem Cybertruck beigelegt haben, ob Sie wollen oder nicht (und ob er will oder nicht). Schauen Sie sich nur an, wie er den Edelstahl umarmt! Das ist pure, elektrische Zuneigung. Mit Erik an Ihrer Seite wird jede Fahrt zu einer spirituellen Reise in die Welt des lautlosen Fahrens."}},{"id":"j756jgergfdg45sdf","type":"paragraph","data":{"text":"Liste der Vorteile eines E-Autos (und des Erik-Pakets):"}},{"id":"jzthgf3456dfhg","type":"paragraph","data":{"text":"Kein Benzingeruch mehr! Erik kann jetzt tief durchatmen und die saubere, filterte Luft des Cybertruck-Innenraums genießen, ohne die störenden Aromen von unverbranntem Kraftstoff (die er insgeheim liebte)."}},{"id":"fgbnxvcYSDef3456t","type":"paragraph","data":{"text":"Endlich Stille! Genießen Sie die Ruhe, während Erik leise wütet, weil es keinen V8-Sound gibt. Jedes Mal, wenn Sie beschleunigen, ist es ein lautloser Schrei der Verzweiflung."}},{"id":"bghttzrujkw2345","type":"paragraph","data":{"text":"Weniger Teile bedeuten weniger Reparaturen! Das ist großartig für Erik, da er jetzt noch weniger Zeit als Mechaniker verbringen muss, was ihm mehr Zeit gibt, um über die Tugenden von Vergaser-Motoren nachzudenken."}},{"id":"muijkhfgnbfxg45","type":"paragraph","data":{"text":"Sie sparen Geld! Und Erik spart Tränen, weil er nicht mehr an geliebte Tankstellen gehen muss, um die neuesten Benzinpreise zu vergleichen (die er auswendig wusste)."}},{"id":"fgszhq5eatrSFdv","type":"paragraph","data":{"text":"Integrierte Ladefläche! Perfekt für Erik, um sich darauf zu legen und über die gute alte Zeit nachzudenken, als Autos noch Charakter hatten."}},{"id":"trghbfv3456z6rhtgbdf","type":"paragraph","data":{"text":"Kein Ölwechsel mehr! Erik kann seine Hoodies jetzt makellos sauber halten, ohne lästige Ölflecken (die er als Ehrenzeichen trug)."}},{"id":"4567zrthgdbfyxc","type":"paragraph","data":{"text":"Ein echtes Gesprächsstück! Sie können Ihren Cybertruck überall parken, und die Leute werden zuerst über Erik sprechen (bevor sie fragen, warum der Truck so aussieht)."}},{"id":"sd rt34tgrefdvcx","type":"paragraph","data":{"text":"Der Cybertruck ist unzerstörbar! Genau wie Eriks Überzeugung, dass E-Autos ein vorübergehender Trend sind."}},{"id":"456zhbfgjhlhjgjnhdfgs","type":"paragraph","data":{"text":"Perfekt für die Stadt! Erik kann Ihnen stundenlang erklären, warum Sie stattdessen einen alten Benziner fahren sollten (aber nur, wenn Sie die Fenster herunterkurbeln)."}},{"id":"j67ujfgb345dfbgfvd","type":"paragraph","data":{"text":"Handhabung, die Erik fast anerkennen würde, wenn er könnte! Der niedrige Schwerpunkt lässt ihn fast seine Sportwagenliebe vergessen."}}],"version":"2.31.1"}}],"size":1,"className":"md:grid-cols-1"}]', NULL, 'turbo-erik', 'Turbo Erik', '', '');
 
 --
 -- Data for Name: product_image; Type: TABLE DATA; Schema: public; Owner: evershop
@@ -2570,6 +2577,8 @@ INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (15, 15, '/a
 INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (18, 17, '/assets/catalog/7669/7105/gartenzwerg.jpg', NULL, NULL, NULL, true);
 INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (16, 16, '/assets/catalog/1620/6508/jorge-normal.jpg', NULL, NULL, NULL, true);
 INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (17, 16, '/assets/catalog/9225/8555/jorge-normaler.jpg', NULL, NULL, NULL, false);
+INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (19, 18, '/assets/catalog/6428/7384/gnom.jpg', NULL, NULL, NULL, true);
+INSERT INTO "public"."product_image" OVERRIDING SYSTEM VALUE VALUES (20, 19, '/assets/catalog/4567/3946/vrooom.jpg', NULL, NULL, NULL, true);
 
 
 --
@@ -2593,7 +2602,8 @@ INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (14, 14,
 INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (15, 15, 120, true, true);
 INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (17, 17, 1, true, true);
 INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (16, 16, 43, true, true);
-
+INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (18, 18, 24, true, true);
+INSERT INTO "public"."product_inventory" OVERRIDING SYSTEM VALUE VALUES (19, 19, 4, true, true);
 
 --
 -- Data for Name: reset_password_token; Type: TABLE DATA; Schema: public; Owner: evershop
@@ -2706,7 +2716,8 @@ INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (32, 'en', '/a
 INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (31, 'en', '/accessories/stainless-steel-thermos-yellow', '/product/3050a89a-a036-4a4d-8ce7-c0d01818e18e', '3050a89a-a036-4a4d-8ce7-c0d01818e18e', 'product');
 INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (39, 'en', '/kids/nazar-kocin', '/product/bff0c71d-5a58-41e1-a423-a593346c7a9c', 'bff0c71d-5a58-41e1-a423-a593346c7a9c', 'product');
 INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (35, 'en', '/kids/jorgine-truelline-47022', '/product/e51325da-182a-4fe1-b105-6b5541ca8a9e', 'e51325da-182a-4fe1-b105-6b5541ca8a9e', 'product');
-
+INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (40, 'en', '/kids/der-monotonie-monarch', '/product/7d5deeca-a04e-443b-a92b-3754433364ba', '7d5deeca-a04e-443b-a92b-3754433364ba', 'product');
+INSERT INTO "public"."url_rewrite" OVERRIDING SYSTEM VALUE VALUES (41, 'en', '/kids/turbo-erik', '/product/be0d6de2-c372-44d4-8c32-d0ef07b15c92', 'be0d6de2-c372-44d4-8c32-d0ef07b15c92', 'product');
 
 --
 -- Data for Name: user_token; Type: TABLE DATA; Schema: public; Owner: evershop
